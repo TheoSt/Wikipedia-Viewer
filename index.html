@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Wikipedia Viewer</title>
+    
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid">
+		<p id="random">Click
+			<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+				here
+			</a>
+			to get a random article.
+		</p>
+		<br />
+		<form onSubmit="search(event);" method="get"><input id="in" type="text" placeholder="&#xf002; Search...">
+		</form>
+		<p id="info" class="hide">
+			Click in any description you want to see the whole wikipedia article
+		</p>
+		<div class="wiki_results"></div></div>
+    
+	
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
