@@ -1,4 +1,18 @@
 $(document).ready(function() {
+	var $window = $(window);
+  var wid = "";
+  if($window.width()<=800) {
+        wid = "90%";
+      }
+  else {
+      wid="50%"; 
+  }
+  
+  $("#in").click(function() {
+    $("#in").animate({
+       width:wid
+    },"slow");
+  });
 });
 
  function search(ev) {
